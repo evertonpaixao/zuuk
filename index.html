@@ -1,10 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zuuk Restaurante</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Front-end: Everton Paixão"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <!-- META TAGS FACEBOOK -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+
+    <!-- URL SITE -->
+    <base href="" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.1.3 -->
+    <link rel="stylesheet" href="library/bootstrap-5.1.3/css/bootstrap.min.css">
+
+    <!-- OWL CAROUSEL 2 -->
+	<link rel="stylesheet" href="library/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="library/owlcarousel/assets/owl.theme.default.min.css">    
+
+    <!-- Theme Site CSS -->
+    <link rel="stylesheet" href="styles/theme.css">
+
+    <h1 style="display: none;">Zuuk Restaurante</h1>    
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+
+        <!-- Nav -->
+        <nav id="nav" class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container">
+
+                <a class="navbar-brand nav-item" href="./"><img src="images/logo-zuuk.webp" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/release">Release</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/cardapio">Cardápio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/localizacao">Localização</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/reservas">Reservas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--/ Nav -->
+
+    </header>
+    <!--/ Header -->
+
+    <section id="banner">
+        <div class="owl-carousel owl-banner owl-theme">
+            <div class="item">
+                <div class="box-legend">
+                    <h2 class="title">viva essa experiência</h2>
+                    <p></p>
+                </div>                
+                <img class="img-fluid" src="images/banner.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="zuuk">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">                    
+                    <h2 class="title">Zuuk</h2>
+                    <h3 class="sub-title">alta gastronomia da culinaria japonesa</h3>
+                </div>
+                <div class="col-lg-6">
+                    <p>Nascido do espírito jovem e empreendedor dos sócios,
+                        o Zūuk é mais do que um restaurante japones. 
+                        É um ambiente de encontro, descontração e apreciação de uma boa culinária. Sendo uma junção do tradicional com o moderno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <img class="img-fluid" src="images/foto-home.webp" alt=""/>
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="images/logo-zuuk.webp" alt="" />
+                </div>
+                <div class="col-lg-4">
+                    <a href="tel:5571984402657"><img class="img-fluid" src="images/ico-phone.webp" alt=""/> +55 71 98440-2657</a>
+                    <div class="box-rede">   
+                        <a href="" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                            </svg>
+                        </a>                     
+                        <a href="" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24" style=" fill:#000000;">
+                                <path d="M 12 2 C 6.5 2 2 6.5 2 12 C 2 13.8 2.5007813 15.5 3.3007812 17 L 2 22 L 7.1992188 20.800781 C 8.6992188 21.600781 10.3 22 12 22 C 17.5 22 22 17.5 22 12 C 22 9.3 20.999609 6.8003906 19.099609 4.9003906 C 17.199609 3.0003906 14.7 2 12 2 z M 12 4 C 14.1 4 16.099219 4.8007813 17.699219 6.3007812 C 19.199219 7.9007813 20 9.9 20 12 C 20 16.4 16.4 20 12 20 C 10.7 20 9.2992188 19.7 8.1992188 19 L 7.5 18.599609 L 6.8007812 18.800781 L 4.8007812 19.300781 L 5.3007812 17.5 L 5.5 16.699219 L 5.0996094 16 C 4.3996094 14.8 4 13.4 4 12 C 4 7.6 7.6 4 12 4 z M 8.5 7.4003906 C 8.3 7.4003906 8.0007812 7.3992188 7.8007812 7.6992188 C 7.5007813 7.9992188 6.9003906 8.6007813 6.9003906 9.8007812 C 6.9003906 11.000781 7.8003906 12.200391 7.9003906 12.400391 C 8.1003906 12.600391 9.6992188 15.199219 12.199219 16.199219 C 14.299219 16.999219 14.699219 16.800781 15.199219 16.800781 C 15.699219 16.700781 16.700391 16.199609 16.900391 15.599609 C 17.100391 14.999609 17.099219 14.499219 17.199219 14.199219 C 17.099219 14.099219 16.999219 14.000391 16.699219 13.900391 C 16.499219 13.800391 15.3 13.199609 15 13.099609 C 14.7 12.999609 14.600391 12.899219 14.400391 13.199219 C 14.200391 13.499219 13.699609 13.999219 13.599609 14.199219 C 13.499609 14.399219 13.399609 14.400781 13.099609 14.300781 C 12.899609 14.200781 12.099609 13.999609 11.099609 13.099609 C 10.299609 12.499609 9.7992187 11.700391 9.6992188 11.400391 C 9.4992187 11.200391 9.7007813 11.000391 9.8007812 10.900391 L 10.199219 10.5 C 10.299219 10.4 10.300391 10.199609 10.400391 10.099609 C 10.500391 9.9996094 10.500391 9.8992188 10.400391 9.6992188 C 10.300391 9.4992187 9.7996094 8.3007812 9.5996094 7.8007812 C 9.3996094 7.4007812 9.2 7.4003906 9 7.4003906 L 8.5 7.4003906 z"></path>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <address>
+                        <p>
+                            Alameda dos Sombreiros 980<br>
+                            Caminho das Árvores, Salvador - BA<br>
+                            CEP: 41820-420
+                        </p>
+                    </address>
+                    <a href="maito:adm@zuuksushi.com" target="_blank">adm@zuuksushi.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/Footer-->
+
+    <!-- Jquery -->
+    <script src="library/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <script src="library/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Preloader -->
+    <script>
+        $("#preloader").fadeOut("slow");
+    </script>
+
+    <!-- OWL CAROUSEL 2 -->
+	<script src="library/owlcarousel/owl.carousel.min.js"></script>
+    <!-- OWL CAROUSEL 2 - BANNER -->
+    <script>
+        $(document).ready(function() {
+          $('.owl-carousel.owl-banner').owlCarousel({
+            autoplay:true,
+            loop: true,
+            margin: 0,
+            items: 1,
+            nav: false,
+            dots: false,
+            responsiveClass: true
+          })
+        })
+    </script>
+
 </head>
 <body>
     
