@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Zuuk Restaurante</title>
+    <title>Zuuk Restaurante - Reservas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Front-end: Everton Paixão"/>
     <meta name="description" content=""/>
@@ -36,9 +36,10 @@
     <!-- Theme Site CSS -->
     <link rel="stylesheet" href="styles/theme.css">
 
-    <body class="home">
+    
+    <body class="reservas">
 
-    <h1 style="display: none;">Zuuk Restaurante</h1>    
+    <h1 style="display: none;">Zuuk Restaurante - Reservas</h1>    
 
     <!-- Preloader -->
     <div id="preloader">
@@ -66,7 +67,7 @@
         
                 <div class="collapse navbar-collapse" id="navbarsExample01">
                     <ul class="navbar-nav">
-                        <li data="home" class="nav-item"><a class="nav-link active" href="./">Home</a></li>
+                        <li data="home" class="nav-item"><a class="nav-link" href="./">Home</a></li>
                         <li data="release" class="nav-item"><a class="nav-link" href="/release.html">Release</a></li>
                         <li data="cardapio" class="nav-item"><a class="nav-link" href="/cardapio.html">Cardápio</a></li>
                         <li data="localizacao" class="nav-item"><a class="nav-link" href="/localizacao.html">Localização</a></li>
@@ -81,36 +82,16 @@
     </header>
     <!--/ Header -->
 
-    <section id="banner">
-        <div class="owl-carousel owl-banner owl-theme">
-            <div class="item">
-                <div class="container">
-                    <div class="box-legend">
-                        <h2 class="title">viva essa<br>experiência</h2>
-                        <p></p>
-                    </div>  
-                </div>              
-                <img class="img-fluid" src="images/banner.webp" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section id="zuuk">
+    <section id="section-header-reservas">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">     
                     <header class="header-titles">
-                        <h2 class="title">Zuuk</h2>
-                        <h3 class="sub-title">alta gastronomia da<br>culinária japonesa</h3>
+                        <h2 class="title">Reservas</h2>
+                        <h3 class="sub-title">Reservas</h3>
                     </header>
                 </div>
-                <div class="col-lg-6">
-                    <p>
-                        Nascido do espírito jovem e empreendedor dos sócios,
-                        o Zūuk é mais do que um restaurante japones. 
-                        É um ambiente de encontro, descontração e apreciação de uma boa culinária. Sendo uma junção do tradicional com o moderno.
-                    </p>
-                </div>
+                <div class="col-lg-6"></div>
             </div>
         </div>
     </section>
@@ -172,6 +153,14 @@
     <!-- Preloader -->
     <script>
         $("#preloader").fadeOut("slow");
+    </script>
+
+    <!-- Page Active -->
+    <script>
+    $(function(){
+        var page = $("body").attr("class");
+        $(".navbar li[data='"+page+"'] .nav-link").addClass("active");
+    });
     </script>
 
     <!-- OWL CAROUSEL 2 -->

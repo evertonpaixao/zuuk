@@ -12,16 +12,20 @@ body {
 
 /*Variável*/
 $color-light: #fff;
-$color-black: #000;
+$color-dark: #000;
 
-$background-black: #000;
+$background-dark: #000;
 $background-light: #fff;
+
+$font-Oswald: 'Oswald', sans-serif;
+$font-Raleway: 'Raleway', sans-serif;
+$font-Roboto: 'Roboto', sans-serif;
 
 $placeholder-color: #006096;
 
-$scroll-color-bg: #fff;
-$scroll-color-bg-thumb: #000;
-$scroll-color-border: #000;
+$scroll-color-bg: #000;
+$scroll-color-bg-thumb: #fff;
+$scroll-color-border: #fff;
 
 $preloader-color-bg: white;
 $preloader-color-bg-loading: black;
@@ -31,7 +35,7 @@ $preloader-color-bg-loading: black;
 body {
     font-size: 100%;
     color: $color-light;
-    background-color: $background-black;
+    background-color: $background-dark;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
@@ -40,6 +44,10 @@ body {
 a {
     color: $color-light;
     text-decoration: none;
+}
+
+a:hover {
+    color: #2c2c2c;
 }
 
 /*Cor do Scroll*/
@@ -89,7 +97,7 @@ body::-webkit-scrollbar-thumb {
 }
 .preloader::after {
     content: 'Carregando...';
-    color: $color-black;
+    color: $color-dark;
     margin-top: 49px;
     position: absolute;
     margin-left: 21px;
@@ -147,4 +155,549 @@ body::-webkit-scrollbar-thumb {
 :-moz-placeholder {
     /* Firefox 18- */
     color: $placeholder-color !important;
+}
+
+/*mudar cor menu responsivo*/
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28236, 236, 236, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+/*-----Theme-------*/
+/*Header*/
+#header.bg {
+    background: url(../images/bg-header.webp) repeat;
+}
+
+.navbar-toggler-icon {
+    @media (max-width: 576px) {
+        width: 1.2em;
+        height: 1.2em;
+    }
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    @media (max-width: 991px) {
+        padding-top: 1rem;
+        padding-bottom: 1rem; 
+    }
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    @media (max-width: 576px) {
+        width: 60%; 
+    }
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+    padding-bottom: 1rem;
+    @media (max-width: 991px) {
+        margin-top: 2rem; 
+    }
+}
+
+.nav-link {
+    border-top: 4px solid $color-dark;    
+    padding: 1.2rem 0rem !important;
+    margin: 0 0.8rem;
+    -webkit-transition:all 500ms ease-out;
+    -moz-transition:all 500ms ease-out;
+    transition:all 500ms ease-out;
+    &:hover {
+        border-top: 4px solid $color-light;
+    }
+    @media (max-width: 991px) {
+        margin: 0;
+    }
+}
+
+.nav-link.active {
+    border-top: 4px solid $color-light;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $color-light;
+    font-family: $font-Oswald;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#banner:after {
+    content: "";
+    border-bottom: 8px solid #fff;
+    position: relative;
+    width: 15%;
+    display: block;
+    bottom: 7px;
+    z-index: 999999;
+}
+
+.box-legend {
+    position: absolute;
+    bottom: 35%;
+
+    h2.title {
+        font-family: $font-Raleway;
+        font-size: 81px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @media (max-width: 991px) {
+            font-size: 50px;
+        }
+        @media (max-width: 767px) {
+            font-size: 32px;
+        }
+        @media (max-width: 576px) {
+            font-size: 26px;
+        }
+    }
+}
+
+#zuuk {
+    padding: 8rem 0 2rem 0;
+
+    @media (max-width: 576px) {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .header-titles {
+
+        display: flex;
+        position: relative;
+        @media (max-width: 576px) {
+            flex-wrap: wrap;
+        }
+
+        h2.title {
+            color: #2c2c2c;
+            font-family: $font-Raleway;
+            font-size: 100px;
+            text-transform: uppercase;
+            @media (max-width: 767px) {
+                font-size: 70px;
+            }
+        }
+    
+        h3.sub-title {
+            font-family: "Oswald", sans-serif;
+            font-size: 40px;
+            text-transform: uppercase;
+            position: absolute;
+            right: 0;
+            margin-top: -45px;
+            margin-right: 30px;
+            @media (max-width: 991px) {
+                margin-right: 95px;
+            }
+            @media (max-width: 767px) {
+                font-size: 28px;
+                margin-top: -33px;
+            }
+            @media (max-width: 576px) {
+                position: relative;
+                margin-top: 0px;
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+
+    }    
+
+    p {
+        font-size: 23px;
+        line-height: 39px;
+        color: #bbbbbb;
+        font-family: $font-Roboto;
+        margin-top: -45px;
+        @media (max-width: 991px) {
+            margin-top: 0;
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    
+}
+
+#footer {
+    padding: 6rem 0;
+
+    .logo-zuuk {
+        max-width: 130px;
+        @media (max-width: 991px) {
+            margin: 0 auto;
+            display: table;
+            margin-bottom: 40px;
+        }
+    }
+
+    .box-tel-redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+
+        img {
+            @media (max-width: 576px) {
+                width: 17%;
+            }
+        }
+
+        span.tel {
+            font-size: 32px;
+            font-family: $font-Oswald;
+            &:hover {
+                color: #2c2c2c;
+            }
+            @media (max-width: 576px) {
+                font-size: 24px;
+            }
+        }
+
+        .box-redes a {
+            margin: 0 .2rem;
+        }
+    }
+
+    address {
+
+        margin-top: .5rem;
+
+        @media (max-width: 991px) {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        p {
+            color: #bbb;
+            font-size: 16px;
+            font-family: $font-Roboto;
+        }
+    }
+
+    .link-email {
+
+        display: block;
+
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+    }
+
+}
+
+#section-header-cardapio {
+    padding: 2rem 0 2rem 0;
+
+    @media (max-width: 576px) {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .header-titles {
+
+        display: flex;
+        position: relative;
+        @media (max-width: 576px) {
+            flex-wrap: wrap;
+        }
+
+        h2.title {
+            color: #2c2c2c;
+            font-family: $font-Raleway;
+            font-size: 100px;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            @media (max-width: 1399px) {
+                font-size: 90px;
+            }
+            @media (max-width: 1199px) {
+                font-size: 70px;
+            }
+            @media (max-width: 767px) {
+                font-size: 60px;
+            }
+            @media (max-width: 576px) {
+                font-size: 40px;
+                letter-spacing: 2px;
+            }
+        }
+    
+        h3.sub-title {
+            font-family: $font-Oswald;
+            font-size: 53px;
+            text-transform: uppercase;
+            position: absolute;
+            right: 0;
+            margin-top: 75px;
+            margin-right: 118px;
+            @media (max-width: 1399px) {
+                margin-top: 70px;
+                margin-right: 59px;
+            }
+            @media (max-width: 1199px) {
+                font-size: 40px;
+                margin-top: 54px;
+                margin-right: 73px;
+            }
+            @media (max-width: 991px) {
+                margin-right: 314px;
+            }
+            @media (max-width: 767px) {
+                font-size: 33px;
+                margin-right: 189px;
+                margin-top: 46px;
+            }
+            @media (max-width: 576px) {
+                font-size: 21px;
+                margin-left: 120px;
+                margin-top: 30px;
+                margin-right: 0;
+                right: inherit;
+            }
+        }
+
+    }    
+
+    p {
+        font-size: 23px;
+        line-height: 39px;
+        color: #bbbbbb;
+        font-family: $font-Roboto;
+        margin-top: 63px;
+        @media (max-width: 1199px) {
+            margin-top: 38px;
+        }
+        @media (max-width: 991px) {
+            margin-top: 25px;
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    
+}
+
+#section-header-localizacao {
+    padding: 2rem 0 2rem 0;
+
+    @media (max-width: 576px) {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .header-titles {
+
+        display: flex;
+        position: relative;
+        @media (max-width: 576px) {
+            flex-wrap: wrap;
+        }
+
+        h2.title {
+            color: #2c2c2c;
+            font-family: $font-Raleway;
+            font-size: 100px;
+            line-height: 80px;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            @media (max-width: 1399px) {
+                font-size: 90px;
+            }
+            @media (max-width: 1199px) {
+                font-size: 70px;
+                line-height: 60px;
+            }
+            @media (max-width: 767px) {
+                font-size: 60px;
+            }
+            @media (max-width: 576px) {
+                font-size: 40px;
+                letter-spacing: 2px;
+                line-height: 36px;
+            }
+        }
+    
+        h3.sub-title {
+            font-family: $font-Oswald;
+            font-size: 53px;
+            text-transform: uppercase;
+            position: absolute;
+            right: 0;
+            margin-top: 137px;
+            margin-right: 151px;
+            @media (max-width: 1399px) {
+                margin-top: 134px;
+                margin-right: 100px;
+                font-size: 49px;
+            }
+            @media (max-width: 1199px) {
+                font-size: 38px;
+                margin-top: 100px;
+                margin-right: 103px;
+            }
+            @media (max-width: 991px) {
+                margin-right: 344px;
+            }
+            @media (max-width: 767px) {
+                font-size: 33px;
+                margin-right: 208px;
+                margin-top: 99px;
+            }
+            @media (max-width: 576px) {
+                font-size: 21px;
+                margin-left: 81px;
+                margin-top: 61px;
+                margin-right: 0;
+                right: inherit;
+            }
+        }
+
+    }
+    
+    .title-endereco {
+        font-family: $font-Oswald;
+        margin-top: 76px;
+        text-transform: uppercase;
+        @media (max-width: 1199px) {
+            margin-top: 25px;
+        }
+        @media (max-width: 991px) {
+            margin-top: 50px;
+        }
+    }
+
+    p {
+        font-size: 23px;
+        line-height: 39px;
+        color: #bbbbbb;
+        font-family: $font-Roboto;
+        margin-top: 0;
+        @media (max-width: 1199px) {
+            margin-top: 0;
+        }
+        @media (max-width: 991px) {
+            margin-top: 0;
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    
+}
+
+#section-header-reservas {
+    padding: 6rem 0 6rem 0;
+
+    @media (max-width: 576px) {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .header-titles {
+
+        display: flex;
+        position: relative;
+        @media (max-width: 576px) {
+            flex-wrap: wrap;
+        }
+
+        h2.title {
+            color: #2c2c2c;
+            font-family: $font-Raleway;
+            font-size: 100px;
+            line-height: 80px;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            padding-left: 1.3rem;
+            @media (max-width: 1399px) {
+                font-size: 90px;
+            }
+            @media (max-width: 1199px) {
+                font-size: 70px;
+                line-height: 60px;
+            }
+            @media (max-width: 767px) {
+                font-size: 60px;
+            }
+            @media (max-width: 576px) {
+                font-size: 40px;
+                letter-spacing: 2px;
+                line-height: 36px;
+            }
+        }
+    
+        h3.sub-title {
+            font-family: "Oswald", sans-serif;
+            font-size: 38px;
+            text-transform: uppercase;
+            position: absolute;
+            margin-top: 60px;
+            left: 0;
+            @media (max-width: 1399px) {
+                font-size: 34px;
+            }
+            @media (max-width: 1199px) {
+                font-size: 28px;
+                margin-top: 45px;
+            }
+            @media (max-width: 991px) {
+            }
+            @media (max-width: 767px) {
+                font-size: 25px;
+            }
+            @media (max-width: 576px) {
+                font-size: 18px;
+                margin-top: 27px;
+                right: inherit;
+            }
+        }
+
+    }
+    
+    .title-endereco {
+        font-family: $font-Oswald;
+        margin-top: 76px;
+        text-transform: uppercase;
+        @media (max-width: 1199px) {
+            margin-top: 25px;
+        }
+        @media (max-width: 991px) {
+            margin-top: 50px;
+        }
+    }
+
+    p {
+        font-size: 23px;
+        line-height: 39px;
+        color: #bbbbbb;
+        font-family: $font-Roboto;
+        margin-top: 0;
+        @media (max-width: 1199px) {
+            margin-top: 0;
+        }
+        @media (max-width: 991px) {
+            margin-top: 0;
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    
 }
