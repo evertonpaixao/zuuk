@@ -153,22 +153,22 @@ body::-webkit-scrollbar-thumb {
 /*Placeholder*/
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #006096 !important;
+  color: #666 !important;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #006096 !important;
+  color: #666 !important;
 }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #006096 !important;
+  color: #666 !important;
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #006096 !important;
+  color: #666 !important;
 }
 
 /*mudar cor menu responsivo*/
@@ -396,6 +396,656 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.about .main-about {
+  margin-top: 10rem;
+}
+
+.about .main-about .container.about {
+  margin-top: 1rem;
+}
+
+.about .main-about .container.about h2.title {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+.about .main-about .container.about p {
+  font-size: 23px;
+  line-height: 30px;
+  color: #bbbbbb;
+  font-family: "Roboto", sans-serif;
+}
+
+.about .main-about .container.about p span {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 3rem 0;
+  font-family: "Oswald", sans-serif;
+  display: block;
+}
+
+.about .main-about .container.about p span b {
+  position: absolute;
+  margin-top: 30px;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 18px;
+  margin-left: -81px;
+}
+
+.about .main-about .container.about img.dialogo-inicio {
+  margin-top: -14px;
+}
+
+.about .main-about .container.about img.dialogo-final {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: 14px;
+  margin-left: 6px;
+}
+
+.about .main-about .container.about .list-paragraph {
+  margin-top: 3rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.about .main-about .container.about .list-paragraph li {
+  font-size: 18px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+.about .main-about .container.about .list-paragraph li::before {
+  content: '';
+  position: relative;
+  background-color: #ff3f4a;
+  width: 17px;
+  height: 18px;
+  margin-right: 5px;
+  background: url(../images/ico-estrela.png) no-repeat;
+  float: left;
+}
+
+.cardapio #section-header-cardapio {
+  padding: 6rem 0 6rem 0;
+}
+
+.cardapio #section-header-cardapio .header-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .cardapio #section-header-cardapio .header-titles {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.cardapio #section-header-cardapio .header-titles h2.title {
+  color: #2c2c2c;
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1399px) {
+  .cardapio #section-header-cardapio .header-titles h2.title {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .cardapio #section-header-cardapio .header-titles h2.title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cardapio #section-header-cardapio .header-titles h2.title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cardapio #section-header-cardapio .header-titles h2.title {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+}
+
+.cardapio #section-header-cardapio .header-titles h3.sub-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 53px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  margin-top: 75px;
+  margin-right: 118px;
+}
+
+@media (max-width: 1399px) {
+  .cardapio #section-header-cardapio .header-titles h3.sub-title {
+    margin-top: 70px;
+    margin-right: 59px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .cardapio #section-header-cardapio .header-titles h3.sub-title {
+    font-size: 40px;
+    margin-top: 54px;
+    margin-right: 73px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cardapio #section-header-cardapio .header-titles h3.sub-title {
+    margin-right: 314px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cardapio #section-header-cardapio .header-titles h3.sub-title {
+    font-size: 33px;
+    margin-right: 189px;
+    margin-top: 46px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cardapio #section-header-cardapio .header-titles h3.sub-title {
+    font-size: 21px;
+    margin-left: 120px;
+    margin-top: 30px;
+    margin-right: 0;
+    right: inherit;
+  }
+}
+
+.cardapio #section-header-cardapio p {
+  font-size: 23px;
+  line-height: 39px;
+  color: #bbbbbb;
+  font-family: "Roboto", sans-serif;
+  margin-top: 63px;
+}
+
+@media (max-width: 1199px) {
+  .cardapio #section-header-cardapio p {
+    margin-top: 38px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cardapio #section-header-cardapio p {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cardapio #section-header-cardapio p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.cardapio .row-pratos {
+  margin-top: 3rem;
+}
+
+.cardapio .row-pratos h2.title {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.cardapio .row-pratos p.paragraph {
+  font-family: "Roboto", sans-serif;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #bbbbbb;
+}
+
+.cardapio .content-link {
+  margin: 0 auto;
+  display: table;
+  margin-top: 5rem;
+}
+
+.cardapio .content-link a {
+  background-color: #fff;
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 23px;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+.cardapio .content-link a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.localizacao #section-header-localizacao {
+  padding: 6rem 0 6rem 0;
+}
+
+.localizacao #section-header-localizacao .header-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .localizacao #section-header-localizacao .header-titles {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.localizacao #section-header-localizacao .header-titles h2.title {
+  color: #2c2c2c;
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  line-height: 80px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1399px) {
+  .localizacao #section-header-localizacao .header-titles h2.title {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .localizacao #section-header-localizacao .header-titles h2.title {
+    font-size: 70px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .localizacao #section-header-localizacao .header-titles h2.title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .localizacao #section-header-localizacao .header-titles h2.title {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 36px;
+  }
+}
+
+.localizacao #section-header-localizacao .header-titles h3.sub-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 53px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  margin-top: 137px;
+  margin-right: 151px;
+}
+
+@media (max-width: 1399px) {
+  .localizacao #section-header-localizacao .header-titles h3.sub-title {
+    margin-top: 134px;
+    margin-right: 100px;
+    font-size: 49px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .localizacao #section-header-localizacao .header-titles h3.sub-title {
+    font-size: 38px;
+    margin-top: 100px;
+    margin-right: 103px;
+  }
+}
+
+@media (max-width: 991px) {
+  .localizacao #section-header-localizacao .header-titles h3.sub-title {
+    margin-right: 344px;
+  }
+}
+
+@media (max-width: 767px) {
+  .localizacao #section-header-localizacao .header-titles h3.sub-title {
+    font-size: 33px;
+    margin-right: 208px;
+    margin-top: 99px;
+  }
+}
+
+@media (max-width: 576px) {
+  .localizacao #section-header-localizacao .header-titles h3.sub-title {
+    font-size: 21px;
+    margin-left: 81px;
+    margin-top: 61px;
+    margin-right: 0;
+    right: inherit;
+  }
+}
+
+.localizacao #section-header-localizacao .title-endereco {
+  font-family: "Oswald", sans-serif;
+  margin-top: 76px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .localizacao #section-header-localizacao .title-endereco {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  .localizacao #section-header-localizacao .title-endereco {
+    margin-top: 50px;
+  }
+}
+
+.localizacao #section-header-localizacao p {
+  font-size: 23px;
+  line-height: 39px;
+  color: #bbbbbb;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+  .localizacao #section-header-localizacao p {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .localizacao #section-header-localizacao p {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .localizacao #section-header-localizacao p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.localizacao .row-espaco {
+  margin-top: 3rem;
+}
+
+.localizacao .row-espaco h2.title {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.localizacao .row-espaco h3.sub-title {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.localizacao .content-text {
+  margin: 5rem 0;
+}
+
+.localizacao .content-text h2.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 53px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1199px) {
+  .localizacao .content-text h2.title {
+    font-size: 4vw;
+  }
+}
+
+.localizacao .content-text h3.sub-title {
+  color: #2c2c2c;
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  line-height: 80px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -25px;
+  z-index: 0;
+  position: relative;
+}
+
+@media (max-width: 1199px) {
+  .localizacao .content-text h3.sub-title {
+    font-size: 10vw;
+    line-height: 8vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .localizacao .content-text h3.sub-title {
+    margin-top: 0;
+  }
+}
+
+.reservas #section-header-reservas {
+  padding: 6rem 0 6rem 0;
+}
+
+.reservas #section-header-reservas .header-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .reservas #section-header-reservas .header-titles {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.reservas #section-header-reservas .header-titles h2.title {
+  color: #2c2c2c;
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  line-height: 80px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  padding-left: 1.3rem;
+}
+
+@media (max-width: 1399px) {
+  .reservas #section-header-reservas .header-titles h2.title {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .reservas #section-header-reservas .header-titles h2.title {
+    font-size: 70px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reservas #section-header-reservas .header-titles h2.title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .reservas #section-header-reservas .header-titles h2.title {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 36px;
+  }
+}
+
+.reservas #section-header-reservas .header-titles h3.sub-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 60px;
+  left: 0;
+}
+
+@media (max-width: 1399px) {
+  .reservas #section-header-reservas .header-titles h3.sub-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .reservas #section-header-reservas .header-titles h3.sub-title {
+    font-size: 28px;
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reservas #section-header-reservas .header-titles h3.sub-title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .reservas #section-header-reservas .header-titles h3.sub-title {
+    font-size: 18px;
+    margin-top: 27px;
+    right: inherit;
+  }
+}
+
+.reservas #section-header-reservas .main-reservas {
+  margin-top: 5rem;
+}
+
+.reservas #section-header-reservas .main-reservas h2.title {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+}
+
+.reservas #section-header-reservas .main-reservas p.paragraph a {
+  color: #bbb;
+}
+
+.reservas #section-header-reservas .main-reservas form .col50 {
+  width: 50%;
+  float: left;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 559px) {
+  .reservas #section-header-reservas .main-reservas form .col50 {
+    width: 100%;
+  }
+}
+
+.reservas #section-header-reservas .main-reservas form label {
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.reservas #section-header-reservas .main-reservas form input {
+  width: 90%;
+  background: none;
+  border: none;
+  border-left: 1px solid #666;
+  border-bottom: 1px solid #666;
+  padding: 10px 10px;
+  color: #666;
+  font-family: "Raleway", sans-serif;
+}
+
+.reservas #section-header-reservas .main-reservas form input:focus-visible {
+  border-left: 1px solid #666;
+  border-bottom: 1px solid #666;
+  outline: none;
+}
+
+@media (max-width: 559px) {
+  .reservas #section-header-reservas .main-reservas form input {
+    width: 100%;
+  }
+}
+
+.reservas #section-header-reservas .main-reservas form input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  -webkit-filter: invert(0.8) brightness(50%) sepia(0%) saturate(10000%) hue-rotate(20deg);
+          filter: invert(0.8) brightness(50%) sepia(0%) saturate(10000%) hue-rotate(20deg);
+}
+
+.reservas #section-header-reservas .main-reservas form input[type="submit"] {
+  width: inherit;
+  border: none;
+  background: #fff;
+  font-family: "Oswald", sans-serif;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.reservas #section-header-reservas .main-reservas form input[type="submit"]:hover {
+  background-color: #2c2c2c;
+}
+
+.reservas #section-header-reservas .main-reservas form textarea {
+  width: 95%;
+  background: none;
+  border: none;
+  border-left: 1px solid #666;
+  border-bottom: 1px solid #666;
+  padding: 10px 10px;
+  color: #666;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .reservas #section-header-reservas .main-reservas .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .reservas #section-header-reservas .main-reservas .box-info-contato {
+    margin-top: 80px;
+  }
+}
+
 #footer {
   padding: 6rem 0;
 }
@@ -477,436 +1127,6 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 991px) {
   #footer .link-email {
     text-align: center;
-  }
-}
-
-#section-header-cardapio {
-  padding: 2rem 0 2rem 0;
-}
-
-@media (max-width: 576px) {
-  #section-header-cardapio {
-    padding: 2rem 0 2rem 0;
-  }
-}
-
-#section-header-cardapio .header-titles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-@media (max-width: 576px) {
-  #section-header-cardapio .header-titles {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-#section-header-cardapio .header-titles h2.title {
-  color: #2c2c2c;
-  font-family: "Raleway", sans-serif;
-  font-size: 100px;
-  letter-spacing: 7px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1399px) {
-  #section-header-cardapio .header-titles h2.title {
-    font-size: 90px;
-  }
-}
-
-@media (max-width: 1199px) {
-  #section-header-cardapio .header-titles h2.title {
-    font-size: 70px;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-header-cardapio .header-titles h2.title {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 576px) {
-  #section-header-cardapio .header-titles h2.title {
-    font-size: 40px;
-    letter-spacing: 2px;
-  }
-}
-
-#section-header-cardapio .header-titles h3.sub-title {
-  font-family: "Oswald", sans-serif;
-  font-size: 53px;
-  text-transform: uppercase;
-  position: absolute;
-  right: 0;
-  margin-top: 75px;
-  margin-right: 118px;
-}
-
-@media (max-width: 1399px) {
-  #section-header-cardapio .header-titles h3.sub-title {
-    margin-top: 70px;
-    margin-right: 59px;
-  }
-}
-
-@media (max-width: 1199px) {
-  #section-header-cardapio .header-titles h3.sub-title {
-    font-size: 40px;
-    margin-top: 54px;
-    margin-right: 73px;
-  }
-}
-
-@media (max-width: 991px) {
-  #section-header-cardapio .header-titles h3.sub-title {
-    margin-right: 314px;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-header-cardapio .header-titles h3.sub-title {
-    font-size: 33px;
-    margin-right: 189px;
-    margin-top: 46px;
-  }
-}
-
-@media (max-width: 576px) {
-  #section-header-cardapio .header-titles h3.sub-title {
-    font-size: 21px;
-    margin-left: 120px;
-    margin-top: 30px;
-    margin-right: 0;
-    right: inherit;
-  }
-}
-
-#section-header-cardapio p {
-  font-size: 23px;
-  line-height: 39px;
-  color: #bbbbbb;
-  font-family: "Roboto", sans-serif;
-  margin-top: 63px;
-}
-
-@media (max-width: 1199px) {
-  #section-header-cardapio p {
-    margin-top: 38px;
-  }
-}
-
-@media (max-width: 991px) {
-  #section-header-cardapio p {
-    margin-top: 25px;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-header-cardapio p {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-#section-header-localizacao {
-  padding: 2rem 0 2rem 0;
-}
-
-@media (max-width: 576px) {
-  #section-header-localizacao {
-    padding: 2rem 0 2rem 0;
-  }
-}
-
-#section-header-localizacao .header-titles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-@media (max-width: 576px) {
-  #section-header-localizacao .header-titles {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-#section-header-localizacao .header-titles h2.title {
-  color: #2c2c2c;
-  font-family: "Raleway", sans-serif;
-  font-size: 100px;
-  line-height: 80px;
-  letter-spacing: 7px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1399px) {
-  #section-header-localizacao .header-titles h2.title {
-    font-size: 90px;
-  }
-}
-
-@media (max-width: 1199px) {
-  #section-header-localizacao .header-titles h2.title {
-    font-size: 70px;
-    line-height: 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-header-localizacao .header-titles h2.title {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 576px) {
-  #section-header-localizacao .header-titles h2.title {
-    font-size: 40px;
-    letter-spacing: 2px;
-    line-height: 36px;
-  }
-}
-
-#section-header-localizacao .header-titles h3.sub-title {
-  font-family: "Oswald", sans-serif;
-  font-size: 53px;
-  text-transform: uppercase;
-  position: absolute;
-  right: 0;
-  margin-top: 137px;
-  margin-right: 151px;
-}
-
-@media (max-width: 1399px) {
-  #section-header-localizacao .header-titles h3.sub-title {
-    margin-top: 134px;
-    margin-right: 100px;
-    font-size: 49px;
-  }
-}
-
-@media (max-width: 1199px) {
-  #section-header-localizacao .header-titles h3.sub-title {
-    font-size: 38px;
-    margin-top: 100px;
-    margin-right: 103px;
-  }
-}
-
-@media (max-width: 991px) {
-  #section-header-localizacao .header-titles h3.sub-title {
-    margin-right: 344px;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-header-localizacao .header-titles h3.sub-title {
-    font-size: 33px;
-    margin-right: 208px;
-    margin-top: 99px;
-  }
-}
-
-@media (max-width: 576px) {
-  #section-header-localizacao .header-titles h3.sub-title {
-    font-size: 21px;
-    margin-left: 81px;
-    margin-top: 61px;
-    margin-right: 0;
-    right: inherit;
-  }
-}
-
-#section-header-localizacao .title-endereco {
-  font-family: "Oswald", sans-serif;
-  margin-top: 76px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1199px) {
-  #section-header-localizacao .title-endereco {
-    margin-top: 25px;
-  }
-}
-
-@media (max-width: 991px) {
-  #section-header-localizacao .title-endereco {
-    margin-top: 50px;
-  }
-}
-
-#section-header-localizacao p {
-  font-size: 23px;
-  line-height: 39px;
-  color: #bbbbbb;
-  font-family: "Roboto", sans-serif;
-  margin-top: 0;
-}
-
-@media (max-width: 1199px) {
-  #section-header-localizacao p {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  #section-header-localizacao p {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-header-localizacao p {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-#section-header-reservas {
-  padding: 6rem 0 6rem 0;
-}
-
-@media (max-width: 576px) {
-  #section-header-reservas {
-    padding: 2rem 0 2rem 0;
-  }
-}
-
-#section-header-reservas .header-titles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-@media (max-width: 576px) {
-  #section-header-reservas .header-titles {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-#section-header-reservas .header-titles h2.title {
-  color: #2c2c2c;
-  font-family: "Raleway", sans-serif;
-  font-size: 100px;
-  line-height: 80px;
-  letter-spacing: 7px;
-  text-transform: uppercase;
-  padding-left: 1.3rem;
-}
-
-@media (max-width: 1399px) {
-  #section-header-reservas .header-titles h2.title {
-    font-size: 90px;
-  }
-}
-
-@media (max-width: 1199px) {
-  #section-header-reservas .header-titles h2.title {
-    font-size: 70px;
-    line-height: 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-header-reservas .header-titles h2.title {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 576px) {
-  #section-header-reservas .header-titles h2.title {
-    font-size: 40px;
-    letter-spacing: 2px;
-    line-height: 36px;
-  }
-}
-
-#section-header-reservas .header-titles h3.sub-title {
-  font-family: "Oswald", sans-serif;
-  font-size: 38px;
-  text-transform: uppercase;
-  position: absolute;
-  margin-top: 60px;
-  left: 0;
-}
-
-@media (max-width: 1399px) {
-  #section-header-reservas .header-titles h3.sub-title {
-    font-size: 34px;
-  }
-}
-
-@media (max-width: 1199px) {
-  #section-header-reservas .header-titles h3.sub-title {
-    font-size: 28px;
-    margin-top: 45px;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-header-reservas .header-titles h3.sub-title {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 576px) {
-  #section-header-reservas .header-titles h3.sub-title {
-    font-size: 18px;
-    margin-top: 27px;
-    right: inherit;
-  }
-}
-
-#section-header-reservas .title-endereco {
-  font-family: "Oswald", sans-serif;
-  margin-top: 76px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1199px) {
-  #section-header-reservas .title-endereco {
-    margin-top: 25px;
-  }
-}
-
-@media (max-width: 991px) {
-  #section-header-reservas .title-endereco {
-    margin-top: 50px;
-  }
-}
-
-#section-header-reservas p {
-  font-size: 23px;
-  line-height: 39px;
-  color: #bbbbbb;
-  font-family: "Roboto", sans-serif;
-  margin-top: 0;
-}
-
-@media (max-width: 1199px) {
-  #section-header-reservas p {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  #section-header-reservas p {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  #section-header-reservas p {
-    font-size: 18px;
-    line-height: 30px;
   }
 }
 /*# sourceMappingURL=theme.css.map */

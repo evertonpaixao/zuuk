@@ -36,8 +36,9 @@
     <!-- Theme Site CSS -->
     <link rel="stylesheet" href="styles/theme.css">
 
+</head>
     
-    <body class="cardapio">
+<body class="cardapio">
 
     <h1 style="display: none;">Zuuk Restaurante - Cardápio</h1>    
 
@@ -53,7 +54,7 @@
     </div>
 
     <!-- Header -->
-    <header id="header" class="bg">
+    <header id="header" class="bg fixed-top">
 
         <!-- Nav -->
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
@@ -68,7 +69,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample01">
                     <ul class="navbar-nav">
                         <li data="home" class="nav-item"><a class="nav-link" href="./">Home</a></li>
-                        <li data="release" class="nav-item"><a class="nav-link" href="/release.html">Release</a></li>
+                        <!-- <li data="release" class="nav-item"><a class="nav-link" href="/release.html">Release</a></li> -->
                         <li data="cardapio" class="nav-item"><a class="nav-link" href="/cardapio.html">Cardápio</a></li>
                         <li data="localizacao" class="nav-item"><a class="nav-link" href="/localizacao.html">Localização</a></li>
                         <li data="reservas" class="nav-item"><a class="nav-link" href="/reservas.html">Reservas</a></li>
@@ -100,7 +101,66 @@
         </div>
     </section>
 
-    <img class="img-fluid" src="images/foto-home.webp" alt=""/>
+    <div class="container">
+        <div class="row row-pratos">
+            <div class="col-sm-6">
+                <img class="img-fluid" src="images/cardapio/polvo.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="title">Polvo com mix de congumelos</h2>
+                <p class="paragraph">Sashimi de polvo com mix de cogumelos, finalizado teriyaki, cebolete e gergelim torrado.</p>
+            </div>
+        </div>
+        <div class="row row-pratos">            
+            <div class="col-sm-6">
+                <h2 class="title">CROQUETA DE SALMÃO</h2>
+                <p class="paragraph">Croqueta recheada com salmão grelhado, finalizado com aioli da casa e katsobushi.</p>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-fluid" src="images/cardapio/croqueta.jpg" alt="" width="100%" />
+            </div>
+        </div>
+        <div class="row row-pratos">
+            <div class="col-sm-6">
+                <img class="img-fluid" src="images/cardapio/uramki.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="title">URAMAKI SALMÃO SPICY</h2>
+                <p class="paragraph">Arroz shari, tartar de salmão spicy, sour cream e alho frito.</p>
+            </div>
+        </div>
+        <div class="row row-pratos">            
+            <div class="col-sm-6">
+                <h2 class="title">SALMÃO TORO TRUFADO</h2>
+                <p class="paragraph">Barriga de salmão, salsa trufada, azeite trufado e raspas de limão siciliano.</p>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-fluid" src="images/cardapio/salmao.jpg" alt="" width="100%" />
+            </div>
+        </div>
+        <div class="row row-pratos">
+            <div class="col-sm-6">
+                <img class="img-fluid" src="images/cardapio/chocoim.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="title">CHOCOIM</h2>
+                <p class="paragraph">Bolo de chocolate, brigadeiro 50% cacau, farofa de amendoim, creme anglaise de paçoca, sorvete de amendoim e tuille de chocolate.</p>
+            </div>
+        </div>
+        <div class="row row-pratos">            
+            <div class="col-sm-6">
+                <h2 class="title">G&T EXPERIENCE BEEFEATER 24</h2>
+                <p class="paragraph">Beefeater 24, água tônica, chá de morango com manga e fatia de manga tommy.</p>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-fluid" src="images/cardapio/get.jpg" alt="" width="100%" />
+            </div>
+        </div>
+    </div>
+
+    <div class="content-link">
+        <a href="https://zuuk-sushi.goomer.app/menu" target="_blank">Consulte nosso cardápio</a>
+    </div>
 
     <!--Footer-->
     <footer id="footer">
@@ -135,12 +195,12 @@
                 <div class="col-lg-3">
                     <address>
                         <p>
-                            Alameda dos Sombreiros 980<br>
+                            Alameda dos Sombreiros, 980<br>
                             Caminho das Árvores, Salvador - BA<br>
                             CEP: 41820-420
                         </p>
                     </address>
-                    <a class="link-email" href="maito:adm@zuuksushi.com" target="_blank">adm@zuuksushi.com</a>
+                    <a class="link-email" href="mailto:adm@zuuksushi.com" target="_blank">adm@zuuksushi.com</a>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -183,8 +243,6 @@
           })
         })
     </script>
-
-</head>
     
 </body>
 </html>

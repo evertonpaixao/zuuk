@@ -34,10 +34,11 @@
     <link rel="stylesheet" href="library/owlcarousel/assets/owl.theme.default.min.css">    
 
     <!-- Theme Site CSS -->
-    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/theme.css">    
 
+</head>
     
-    <body class="about">
+<body class="about">
 
     <h1 style="display: none;">Zuuk Restaurante - About</h1>    
 
@@ -53,7 +54,7 @@
     </div>
 
     <!-- Header -->
-    <header id="header" class="bg">
+    <header id="header" class="bg fixed-top">
 
         <!-- Nav -->
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
@@ -68,7 +69,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample01">
                     <ul class="navbar-nav">
                         <li data="home" class="nav-item"><a class="nav-link" href="./">Home</a></li>
-                        <li data="release" class="nav-item"><a class="nav-link" href="/release.html">Release</a></li>
+                        <!-- <li data="release" class="nav-item"><a class="nav-link" href="/release.html">Release</a></li> -->
                         <li data="cardapio" class="nav-item"><a class="nav-link" href="/cardapio.html">Cardápio</a></li>
                         <li data="localizacao" class="nav-item"><a class="nav-link" href="/localizacao.html">Localização</a></li>
                         <li data="reservas" class="nav-item"><a class="nav-link" href="/reservas.html">Reservas</a></li>
@@ -82,7 +83,58 @@
     </header>
     <!--/ Header -->
 
-    <img class="img-fluid" src="images/foto-home.webp" alt=""/>
+    <section class="main-about">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <img class="img-fluid" src="images/img-about.jpg" alt="" width="100%"/>
+                </div>
+                <div class="col-lg-4">
+                    <!-- <h2 class="title">Post Recente</h2>
+                    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                    <iframe src="https://snapwidget.com/embed/850665" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container about">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="title">Restaurante conceitual de culinária japonesa.</h2>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+
+        <div class="container about">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="paragraph">
+                        O restaurante Zuuk foi criado com a proposta de aliar o melhor da gastronomia japonesa com um conceito diferenciado de bar, com produtos diferentes do que se vê por aí. O projeto é uma aposta dos empresários Lucas Cruz, Paulo Salum e Caio Sá, Steve Saback, Leopoldo Leão e Vitor Calixto.
+                    </p>
+                    <p class="paragraph">
+                        <span>
+                            <img class="dialogo-inicio" src="images/ico-dialogo.jpg" alt=""/>
+                            <i>Sempre tivemos o sonho de abrir um restaurante japonês e vimos a necessidade de Salvador tem um japa com um conceito diferente, com uma linha de produtos diferenciados, que não existem na cidade.</i>
+                            <b>Lucas Cruz</b>
+                            <img class="dialogo-final" src="images/ico-dialogo.jpg" alt=""/>
+                        </span>
+                    </p>
+                    <p class="paragraph">
+                        Com o lançamento do horário de almoço, o estabelecimento passa a receber clientes a partir de 12h, mas no turno da noite, é interessante tentar se antecipar às reservas devido a alta procura. Para isso, basta acessar o perfil no Instagram <a href="" target="_blank">@zuuksushi</a> ou entrar em contato por meio do WhatsApp.
+                    </p>
+                    <ul class="list-paragraph">
+                        <li>Onde Comer em Salvador</li>
+                        <li>Alô Alô liahia</li>
+                        <li>Correio 24h</li>
+                        <li>Bahia Notícias</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <!--Footer-->
     <footer id="footer">
@@ -117,12 +169,12 @@
                 <div class="col-lg-3">
                     <address>
                         <p>
-                            Alameda dos Sombreiros 980<br>
+                            Alameda dos Sombreiros, 980<br>
                             Caminho das Árvores, Salvador - BA<br>
                             CEP: 41820-420
                         </p>
                     </address>
-                    <a class="link-email" href="maito:adm@zuuksushi.com" target="_blank">adm@zuuksushi.com</a>
+                    <a class="link-email" href="mailto:adm@zuuksushi.com" target="_blank">adm@zuuksushi.com</a>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -165,8 +217,6 @@
           })
         })
     </script>
-
-</head>
     
 </body>
 </html>

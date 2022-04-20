@@ -36,8 +36,9 @@
     <!-- Theme Site CSS -->
     <link rel="stylesheet" href="styles/theme.css">
 
+</head>
     
-    <body class="localizacao">
+<body class="localizacao">
 
     <h1 style="display: none;">Zuuk Restaurante - Localização</h1>    
 
@@ -53,7 +54,7 @@
     </div>
 
     <!-- Header -->
-    <header id="header" class="bg">
+    <header id="header" class="bg fixed-top">
 
         <!-- Nav -->
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
@@ -68,7 +69,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample01">
                     <ul class="navbar-nav">
                         <li data="home" class="nav-item"><a class="nav-link" href="./">Home</a></li>
-                        <li data="release" class="nav-item"><a class="nav-link" href="/release.html">Release</a></li>
+                        <!-- <li data="release" class="nav-item"><a class="nav-link" href="/release.html">Release</a></li> -->
                         <li data="cardapio" class="nav-item"><a class="nav-link" href="/cardapio.html">Cardápio</a></li>
                         <li data="localizacao" class="nav-item"><a class="nav-link" href="/localizacao.html">Localização</a></li>
                         <li data="reservas" class="nav-item"><a class="nav-link" href="/reservas.html">Reservas</a></li>
@@ -101,7 +102,33 @@
         </div>
     </section>
 
-    <img class="img-fluid" src="images/foto-home.webp" alt=""/>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15551.350755847288!2d-38.4568356!3d-12.9822312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x525d161665d87405!2sZ%C5%ABuk%20Sushi!5e0!3m2!1spt-BR!2sbr!4v1649944481952!5m2!1spt-BR!2sbr" width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="row row-espaco">
+            <h2 class="title">Espaço</h2>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="images/bar.jpg" alt="" width="100%" />
+                <h3 class="sub-title">Bar</h3>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="images/salao.jpg" alt="" width="100%" />
+                <h3 class="sub-title">salão</h3>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="images/area-espera.jpg" alt="" width="100%" />
+                <h3 class="sub-title">Área de Espera</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-text">
+        <h2 class="title">Venha Viver uma</h2>
+        <h3 class="sub-title">Experiência Zuuk</h3>
+    </div>
 
     <!--Footer-->
     <footer id="footer">
@@ -136,12 +163,12 @@
                 <div class="col-lg-3">
                     <address>
                         <p>
-                            Alameda dos Sombreiros 980<br>
+                            Alameda dos Sombreiros, 980<br>
                             Caminho das Árvores, Salvador - BA<br>
                             CEP: 41820-420
                         </p>
                     </address>
-                    <a class="link-email" href="maito:adm@zuuksushi.com" target="_blank">adm@zuuksushi.com</a>
+                    <a class="link-email" href="mailto:adm@zuuksushi.com" target="_blank">adm@zuuksushi.com</a>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -184,8 +211,6 @@
           })
         })
     </script>
-
-</head>
     
 </body>
 </html>
