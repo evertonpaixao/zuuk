@@ -24,10 +24,23 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+  font-weight: 300;
 }
 
 a:hover {
   color: #2c2c2c;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+p {
+  font-weight: 300;
 }
 
 /*Cor do Scroll*/
@@ -265,6 +278,10 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
 }
 
+#banner {
+  margin-top: 5rem;
+}
+
 #banner:after {
   content: "";
   border-bottom: 8px solid #fff;
@@ -278,6 +295,12 @@ body::-webkit-scrollbar-thumb {
 .box-legend {
   position: absolute;
   bottom: 35%;
+}
+
+@media (max-width: 300px) {
+  .box-legend {
+    bottom: 15%;
+  }
 }
 
 .box-legend h2.title {
@@ -303,6 +326,12 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 576px) {
   .box-legend h2.title {
     font-size: 26px;
+  }
+}
+
+@media (max-width: 300px) {
+  .box-legend h2.title {
+    font-size: 20px;
   }
 }
 
@@ -831,7 +860,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 7px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -25px;
+  margin-top: 25px;
   z-index: 0;
   position: relative;
 }
@@ -845,7 +874,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 767px) {
   .localizacao .content-text h3.sub-title {
-    margin-top: 0;
+    margin-top: 15px;
   }
 }
 
