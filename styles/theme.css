@@ -406,6 +406,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 0px;
     margin-right: 0;
     width: 100%;
+    font-size: 16px;
   }
 }
 
@@ -430,8 +431,15 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 576px) {
+  #zuuk p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+
 .about .main-about {
-  margin-top: 10rem;
+  margin-top: 10vw;
 }
 
 .about .main-about .container.about {
@@ -449,6 +457,13 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 576px) {
+  .about .main-about .container.about h2.title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .about .main-about .container.about p {
   font-size: 23px;
   line-height: 30px;
@@ -460,6 +475,13 @@ body::-webkit-scrollbar-thumb {
   .about .main-about .container.about p {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .main-about .container.about p {
+    font-size: 13px;
+    line-height: 21px;
   }
 }
 
@@ -487,6 +509,13 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 576px) {
+  .about .main-about .container.about p span b {
+    font-size: 14px;
+    margin-left: -61px;
+  }
+}
+
 .about .main-about .container.about img.dialogo-inicio {
   margin-top: -14px;
 }
@@ -494,7 +523,6 @@ body::-webkit-scrollbar-thumb {
 .about .main-about .container.about img.dialogo-final {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-top: 14px;
   margin-left: 6px;
 }
 
@@ -520,6 +548,12 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 767px) {
   .about .main-about .container.about .list-paragraph li {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .main-about .container.about .list-paragraph li {
+    font-size: 14px;
   }
 }
 

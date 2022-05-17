@@ -342,6 +342,7 @@ body::-webkit-scrollbar-thumb {
                 margin-top: 0px;
                 margin-right: 0;
                 width: 100%;
+                font-size: 16px;
             }
         }
 
@@ -360,6 +361,10 @@ body::-webkit-scrollbar-thumb {
             font-size: 18px;
             line-height: 30px;
         }
+        @media (max-width: 576px) {
+            font-size: 13px;
+            line-height: 21px;
+        }
     }
     
 }
@@ -367,7 +372,7 @@ body::-webkit-scrollbar-thumb {
 .about {
 
     .main-about {
-        margin-top: 10rem;
+        margin-top: 10vw;
 
         .container.about {
 
@@ -379,6 +384,10 @@ body::-webkit-scrollbar-thumb {
                 @media (max-width: 767px) {
                     font-size: 18px;
                 }
+                @media (max-width: 576px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
 
             p {
@@ -389,6 +398,10 @@ body::-webkit-scrollbar-thumb {
                 @media (max-width: 767px) {
                     font-size: 16px;
                     line-height: 24px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 13px;                    
+                    line-height: 21px;
                 }
                 span {
                     color: #fff;
@@ -408,6 +421,10 @@ body::-webkit-scrollbar-thumb {
                             font-size: 16px;
                             margin-left: -70px;
                         }
+                        @media (max-width: 576px) {
+                            font-size: 14px;
+                            margin-left: -61px;
+                        }
                     }
                 }
             }
@@ -418,7 +435,6 @@ body::-webkit-scrollbar-thumb {
 
             img.dialogo-final {
                 transform: rotate(180deg);
-                margin-top: 14px;
                 margin-left: 6px;
             }
 
@@ -437,6 +453,9 @@ body::-webkit-scrollbar-thumb {
                     margin-bottom: 5px;
                     @media (max-width: 767px) {
                         font-size: 16px;
+                    }
+                    @media (max-width: 576px) {
+                        font-size: 14px;
                     }
                     
                     &::before {
