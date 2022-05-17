@@ -443,11 +443,24 @@ body::-webkit-scrollbar-thumb {
   font-family: "Oswald", sans-serif;
 }
 
+@media (max-width: 767px) {
+  .about .main-about .container.about h2.title {
+    font-size: 18px;
+  }
+}
+
 .about .main-about .container.about p {
   font-size: 23px;
   line-height: 30px;
   color: #bbbbbb;
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .about .main-about .container.about p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .about .main-about .container.about p span {
@@ -465,6 +478,13 @@ body::-webkit-scrollbar-thumb {
   font-weight: normal;
   font-size: 18px;
   margin-left: -81px;
+}
+
+@media (max-width: 767px) {
+  .about .main-about .container.about p span b {
+    font-size: 16px;
+    margin-left: -70px;
+  }
 }
 
 .about .main-about .container.about img.dialogo-inicio {
@@ -495,6 +515,12 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .about .main-about .container.about .list-paragraph li {
+    font-size: 16px;
+  }
 }
 
 .about .main-about .container.about .list-paragraph li::before {
@@ -836,6 +862,19 @@ body::-webkit-scrollbar-thumb {
   font-family: "Oswald", sans-serif;
   margin-top: 1rem;
   font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .localizacao .row-espaco h3.sub-title {
+    margin-top: .5rem;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .localizacao .row-espaco h3.sub-title {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .localizacao .content-text {

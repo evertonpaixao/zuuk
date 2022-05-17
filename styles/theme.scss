@@ -376,6 +376,9 @@ body::-webkit-scrollbar-thumb {
             h2.title {
                 text-transform: uppercase;
                 font-family: $font-Oswald;
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                }
             }
 
             p {
@@ -383,6 +386,10 @@ body::-webkit-scrollbar-thumb {
                 line-height: 30px;
                 color: #bbbbbb;
                 font-family: $font-Roboto;
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
                 span {
                     color: #fff;
                     text-transform: uppercase;
@@ -397,6 +404,10 @@ body::-webkit-scrollbar-thumb {
                         font-weight: normal;
                         font-size: 18px;
                         margin-left: -81px;
+                        @media (max-width: 767px) {
+                            font-size: 16px;
+                            margin-left: -70px;
+                        }
                     }
                 }
             }
@@ -424,6 +435,9 @@ body::-webkit-scrollbar-thumb {
                     display: flex;
                     align-items: center;
                     margin-bottom: 5px;
+                    @media (max-width: 767px) {
+                        font-size: 16px;
+                    }
                     
                     &::before {
                         content: '';
@@ -691,6 +705,13 @@ body::-webkit-scrollbar-thumb {
             font-family: $font-Oswald;
             margin-top: 1rem;
             font-size: 1.5rem;
+            @media (max-width: 767px) {
+                margin-top: .5rem;
+                font-size: 18px;
+            }
+            @media (max-width: 576px) {
+                margin-bottom: 1.5rem;
+            }
         }
     }
 
