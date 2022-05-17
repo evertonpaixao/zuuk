@@ -335,6 +335,11 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.foto-home {
+  margin: 0 auto;
+  display: table;
+}
+
 #zuuk {
   padding: 8rem 0 2rem 0;
 }
